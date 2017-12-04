@@ -4,3 +4,10 @@
 
    - name: ping connections
      ping:
+
+   - name: check httpd connection
+     service: name=httpd status=started
+     register: out-httpd
+
+   - debug:
+        var = out-httpd
