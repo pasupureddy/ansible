@@ -5,6 +5,3 @@
    - name: ping connections
      ping:
 
-   - name: check httpd connection
-     service: name=httpd status=started
-
